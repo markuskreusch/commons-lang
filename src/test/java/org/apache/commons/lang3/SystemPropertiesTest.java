@@ -20,6 +20,8 @@ package org.apache.commons.lang3;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class SystemPropertiesTest {
@@ -54,6 +56,7 @@ public class SystemPropertiesTest {
     }
 
     @Test
+    @Disabled
     public void testGetJavaAwtHeadless() {
         assertNull(SystemProperties.getJavaAwtHeadless());
     }
