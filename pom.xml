@@ -738,7 +738,6 @@
           <verbose>true</verbose>
           <mutationUnitSize>100</mutationUnitSize>
           <historyOutputFile>/tmp/pit-history-commons-lang-3.9.bin</historyOutputFile>
-          <withHistory>true</withHistory>
           <argLine>-Xmx512m</argLine>
           <threads>20</threads>
         </configuration>
