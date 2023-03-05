@@ -735,7 +735,6 @@
         <artifactId>pitest-maven</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <configuration>
-          <verbose>true</verbose>
           <mutationUnitSize>100</mutationUnitSize>
           <historyOutputFile>/tmp/pit-history-commons-lang-3.9.bin</historyOutputFile>
           <argLine>-Xmx512m</argLine>
