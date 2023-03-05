@@ -798,7 +798,6 @@
         <artifactId>pitest-maven</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <configuration>
-          <verbose>true</verbose>
           <mutationUnitSize>100</mutationUnitSize>
           <historyInputFile>/tmp/pit-history-commons-lang-3.11.bin</historyInputFile>
           <historyOutputFile>/tmp/pit-history-commons-lang-3.12.bin</historyOutputFile>
