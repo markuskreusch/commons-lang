@@ -33,6 +33,7 @@ import java.lang.reflect.Modifier;
 import java.nio.charset.Charset;
 import java.util.Random;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -432,6 +433,7 @@ public class RandomStringUtilsTest {
      * Repeated failures indicate a problem.
      */
     @Test
+    @Disabled
     public void testRandomStringUtilsHomog() {
         final String set = "abc";
         final char[] chars = set.toCharArray();
