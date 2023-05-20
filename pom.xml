@@ -537,6 +537,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
+      <version>5.9.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -786,6 +787,24 @@
         <configuration>
           <excludeFilterFile>${basedir}/spotbugs-exclude-filter.xml</excludeFilterFile>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <configuration>
+          <mutationUnitSize>100</mutationUnitSize>
+          <historyOutputFile>/tmp/pit-history-commons-lang-3.9.bin</historyOutputFile>
+          <argLine>-Xmx512m</argLine>
+          <threads>20</threads>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-junit5-plugin</artifactId>
+            <version>1.1.2</version>
+          </dependency>
+        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.felix</groupId>
