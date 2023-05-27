@@ -794,7 +794,8 @@
         <version>1.0.0-SNAPSHOT</version>
         <configuration>
           <mutationUnitSize>100</mutationUnitSize>
-          <historyOutputFile>/tmp/pit-history-commons-lang-3.9.bin</historyOutputFile>
+          <historyOutputFile>/tmp/pit-history-commons-lang-3.12-3.bin</historyOutputFile>
+          <historyInputFile>/tmp/pit-history-commons-lang-3.12-2.bin</historyInputFile>
           <argLine>-Xmx512m</argLine>
           <threads>20</threads>
         </configuration>
